@@ -1,0 +1,40 @@
+"use client";
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
+
+export default function HamburgerMenu() {
+  console.log("hamburger");
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+  return (
+    <>
+      <div className="md:hidden block border-0 relative">
+        <div className="flex flex-col">
+          <button onClick={toggleMenu} className="text-logo">
+            {isMenuOpen ? (
+              <X className="w-8 h-8" />
+            ) : (
+              <Menu className="w-8 h-8" />
+            )}
+          </button>
+        </div>
+
+        <div
+          className={`fixed top-15 right-0 h-screen bg-white w-64 p-4 transform transition-transform duration-300 z-50 ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="flex flex-col gap-2 text-lg">
+            <Link href={"/"}> Home </Link>
+            <Link href={"/about"}> About Us </Link>
+            <Link href={"/blog"}> Blog </Link>
+            <Link href={"/contact"}> Contact Us </Link>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
