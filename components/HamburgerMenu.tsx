@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 
 export default function HamburgerMenu() {
-  console.log("hamburger");
   const [isMenuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
