@@ -2,6 +2,11 @@ import React from "react";
 import { blogs } from "@/data/blogs";
 import Image from "next/image";
 import { Clock, MessageCircle, Eye } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blogs",
+};
 
 export default function page() {
   return (

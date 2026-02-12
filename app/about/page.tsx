@@ -2,7 +2,12 @@ import Certificates from "@/components/about/Certificates";
 import Hero from "@/components/about/Hero";
 import Info from "@/components/about/Info";
 import MissionAndVision from "@/components/about/MissionAndVision";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Us",
+};
 
 export default function page() {
   return (
