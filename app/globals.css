@@ -7,7 +7,7 @@
   --color-background: #f9fafb;
   --color-border: #e5e7eb;
   --color-logo: #0371c8;
-
+  --color-lightBlue: #f2f6ff;
   --text-heading: var(--font-poppins);
   --text-body: var(--font-inter);
 }

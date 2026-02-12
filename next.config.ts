@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
         hostname: "iamtechie.com",
         pathname: "/**", // allow all paths
       },
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+      },
     ],
   },
 };
