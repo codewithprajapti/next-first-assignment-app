@@ -30,25 +30,6 @@ export default function OurRelationships() {
   ];
   return (
     <>
-      {/* <div className="flex flex-col items-center gap-5">
-        <h1 className="text-2xl md:text-4xl font-extrabold">
-          Our Relationships
-        </h1>
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
-          {logos.map((logo, index) => {
-            return (
-              <Image
-                key={index}
-                src={logo}
-                alt="Logo"
-                width={300}
-                height={100}
-              />
-            );
-          })}
-        </div>
-      </div> */}
-
       <div className="flex flex-col items-center gap-6 w-full">
         <h1 className="text-2xl md:text-4xl font-extrabold text-center">
           Our Relationships

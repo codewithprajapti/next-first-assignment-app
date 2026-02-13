@@ -48,8 +48,7 @@ export default function page() {
             key={index}
             className="flex flex-col cursor-pointer bg-white rounded-lg overflow-hidden shadow-sm"
           >
-            {/* Blog Image */}
-            <div className="relative w-full aspect-[16/9]">
+            <div className="relative w-full aspect-video">
               <Image
                 src={blog.image}
                 alt={blog.title}
@@ -59,7 +58,6 @@ export default function page() {
               />
             </div>
 
-            {/* Blog Content */}
             <div className="flex flex-col px-3 md:px-4 py-4 gap-2">
               <div className="flex text-gray-500 items-center gap-2 text-sm">
                 <Clock size={18} />
@@ -71,7 +69,6 @@ export default function page() {
               <p className="text-gray-500 text-sm">{blog.description}</p>
             </div>
 
-            {/* Blog Footer */}
             <div className="flex bg-lightBlue gap-4 items-center px-3 md:px-4 py-3 text-sm">
               <div className="flex text-gray-700 items-center gap-2">
                 <MessageCircle size={16} />
