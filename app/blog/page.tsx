@@ -42,41 +42,49 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-start border-0 px-4 md:px-20 ">
-        {blogs.map((blog, index) => {
-          return (
-            <div key={index} className="flex flex-col cursor-pointer">
-              <div className="flex w-full border-0">
-                <Image
-                  src={blog.image}
-                  width={500}
-                  height={100}
-                  alt={blog.title}
-                />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start px-4 md:px-20 w-full">
+        {blogs.map((blog, index) => (
+          <div
+            key={index}
+            className="flex flex-col cursor-pointer bg-white rounded-lg overflow-hidden shadow-sm"
+          >
+            {/* Blog Image */}
+            <div className="relative w-full aspect-[16/9]">
+              <Image
+                src={blog.image}
+                alt={blog.title}
+                fill
+                sizes="(max-width: 48rem) 92vw, 30vw"
+                className="object-cover"
+              />
+            </div>
+
+            {/* Blog Content */}
+            <div className="flex flex-col px-3 md:px-4 py-4 gap-2">
+              <div className="flex text-gray-500 items-center gap-2 text-sm">
+                <Clock size={18} />
+                <span>{blog.date}</span>
               </div>
-              <div className="flex flex-col bg-white px-2 md:px-4 py-4 md:py-8 gap-2">
-                <div className="flex text-gray-500 items-center gap-2">
-                  <Clock size={24} />
-                  <span> {blog.date} </span>
-                </div>
-                <h1 className="text-lg md:text-2xl font-black md:font-bold">
-                  {blog.title}
-                </h1>
-                <p className="text-gray-400"> {blog.description} </p>
+
+              <h2 className="text-lg md:text-xl font-semibold">{blog.title}</h2>
+
+              <p className="text-gray-500 text-sm">{blog.description}</p>
+            </div>
+
+            {/* Blog Footer */}
+            <div className="flex bg-lightBlue gap-4 items-center px-3 md:px-4 py-3 text-sm">
+              <div className="flex text-gray-700 items-center gap-2">
+                <MessageCircle size={16} />
+                <span>{blog.comments}</span>
               </div>
-              <div className="flex bg-lightBlue gap-4 items-center px-2 md:px-4 py-4 md:py-8">
-                <div className="flex text-gray-700 items-center gap-2">
-                  <MessageCircle size={18} />
-                  <span> {blog.comments} </span>
-                </div>
-                <div className="flex text-gray-700 items-center gap-2">
-                  <Eye size={18} />
-                  <span> {blog.views} </span>
-                </div>
+
+              <div className="flex text-gray-700 items-center gap-2">
+                <Eye size={16} />
+                <span>{blog.views}</span>
               </div>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </>
   );

@@ -40,11 +40,30 @@ export default function HeroTypeWrittingEffect() {
 
   return (
     <>
-      <div className="flex items-center gap-1 border-0">
+      {/* <div className="flex items-center gap-1 border-0">
         <h1 className="text-2xl md:text-4xl font-bold text-logo">{text}</h1>
         <span className="animate-pulse text-text text-4xl md:text-5xl font-light">
           |
         </span>
+      </div> */}
+      {/* <div className="flex items-center gap-1 border-0">
+        <h1 className="text-2xl md:text-4xl font-bold text-logo min-h-[40px] md:min-h-[56px]">
+          <span className="inline-block w-[24ch] whitespace-nowrap">
+            {text}
+          </span>
+        </h1>
+
+        <span className="animate-pulse text-text text-4xl md:text-5xl font-light">
+          |
+        </span>
+      </div> */}
+      <div className="flex items-center">
+        <h1 className="text-2xl md:text-4xl font-bold text-logo min-h-10 md:min-h-14">
+          <span className="inline-block w-[24ch] whitespace-nowrap">
+            {text}
+            <span className="ml-1 text-text font-light cursor">|</span>
+          </span>
+        </h1>
       </div>
     </>
   );

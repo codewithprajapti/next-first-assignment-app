@@ -17,7 +17,7 @@ export default function Certificates() {
   ];
   return (
     <>
-      <div className="flex flex-col items-center gap-5 md:gap-10">
+      {/* <div className="flex flex-col items-center gap-5 md:gap-10">
         <h1 className="text-xl md:text-5xl font-black md:font-extrabold">
           Our Certifications & Recognitions
         </h1>
@@ -30,6 +30,29 @@ export default function Certificates() {
               </div>
             );
           })}
+        </div>
+      </div> */}
+
+      <div className="flex flex-col items-center gap-6 md:gap-10 w-full">
+        <h1 className="text-xl md:text-5xl font-black md:font-extrabold text-center">
+          Our Certifications & Recognitions
+        </h1>
+
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 w-full">
+          {logos.map((logo, index) => (
+            <div
+              key={index}
+              className="relative w-full aspect-4/2 flex items-center justify-center bg-white rounded-md border border-gray-300 "
+            >
+              <Image
+                src={logo}
+                alt={`Certification logo ${index + 1}`}
+                fill
+                sizes="(max-width: 48rem) 45vw, 18vw"
+                className="object-contain p-[0.3rem]"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </>

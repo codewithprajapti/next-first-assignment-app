@@ -12,7 +12,17 @@ export default function Hero() {
           </h1>
         </div>
         <div className="hidden md:flex w-full border-0 items-center justify-center">
-            <Image src={'https://iamtechie.com/wp-content/uploads/2024/05/Logo-PNG-1.png'} width={500} height={100} alt=""/>
+          <Image
+            src={
+              "https://iamtechie.com/wp-content/uploads/2024/05/Logo-PNG-1.png"
+            }
+            alt="Techies Infotech About Banner"
+            width={800}
+            height={200}
+            priority
+            sizes="(max-width: 48rem) 0vw, 50vw"
+            className="w-[40vw] h-auto"
+          />
         </div>
       </div>
     </>

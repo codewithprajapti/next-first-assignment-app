@@ -5,17 +5,17 @@ export default function Info() {
   return (
     <>
       <div className="flex flex-col gap-5 md:gap-0 md:grid md:grid-cols-2 md:flex-row ">
-        <div className="flex border-0">
+        <div className="flex w-full justify-center">
           <Image
-            src={
-              "https://iamtechie.com/wp-content/uploads/elementor/thumbs/about-1st-scaled-r5qx5qpkuwyn6juoq2fvyklt8ti3mbudfm93g98i0i.webp"
-            }
-            width={500}
-            height={100}
-            alt="Info IMage"
-            className="rounded-lg"
+            src="https://iamtechie.com/wp-content/uploads/elementor/thumbs/about-1st-scaled-r5qx5qpkuwyn6juoq2fvyklt8ti3mbudfm93g98i0i.webp"
+            alt="Team collaboration and development at Techies Infotech"
+            width={800}
+            height={600}
+            sizes="(max-width: 48rem) 90vw, 40vw"
+            className="w-[90vw] md:w-[40vw] h-auto rounded-lg"
           />
         </div>
+
         <div className="flex flex-col  border-0 gap-2 md:gap-5">
           <h2 className="text-2xl  md:text-5xl font-medium md:font-bold text-logo border-0 ">
             Your ultimate partner

@@ -29,7 +29,10 @@ export default function Hero() {
             src={"https://iamtechie.com/wp-content/uploads/2024/09/bnr-1.png"}
             width={500}
             height={100}
-            alt="Hero Image"
+            alt="Techies Infotech digital solutions banner"
+            priority
+            sizes="100vw"
+            className="w-[80vw] md:w-[40vw] h-auto"
           />
         </div>
       </div>

@@ -43,8 +43,7 @@ export default function page() {
       <div className="flex flex-col px-4 md:px-20 gap-5">
         <div className="flex flex-col items-center gap-3">
           <h1 className="text-2xl md:text-5xl font-black md:font-extrabold">
-            {" "}
-            Let's Create Solutions Together{" "}
+            Let's Create Solutions Together
           </h1>
           <p className="text-base md:text-lg font-medium md:font-bold">
             Reach out to us and discuss how we can collaborate, innovate, and
@@ -53,17 +52,17 @@ export default function page() {
         </div>
 
         <div className="flex flex-col md:flex-row bg-white px-4 py-4 md:px-8 md:py-6 md:gap-5">
-          <div className="flex w-full md:w-1/2 h-fit">
+          <div className="flex w-full md:w-1/2 justify-center">
             <Image
-              src={
-                "https://iamtechie.com/wp-content/uploads/2024/05/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working-1.png"
-              }
-              width={500}
-              height={100}
-              alt="Contact-Us Image"
-              className="rounded-lg"
+              src="https://iamtechie.com/wp-content/uploads/2024/05/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working-1.png"
+              alt="Team discussion with clients at Techies Infotech"
+              width={900}
+              height={600}
+              sizes="(max-width: 48rem) 92vw, 45vw"
+              className="w-[92vw] md:w-full h-auto rounded-lg"
             />
           </div>
+
           <div className="flex flex-col border-0 gap-5">
             <div className="flex flex-col gap-2 md:gap-4">
               <h2 className="text-xl md:text-2xl font-medium md:font-bold">
