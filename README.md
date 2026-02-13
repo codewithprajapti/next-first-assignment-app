@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Demo Website – Assignment Project
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project was developed as part of an assignment to simulate a real company workflow.
+The goal was to build a multi-page website using Next.js with a proper layout, responsive design, and SEO best practices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The project includes multiple pages, a reusable layout, optimized images, and performance improvements based on Lighthouse analysis.
+
+---
+
+## Assignment Requirements
+
+The following tasks were required:
+
+- Initialize a Next.js project
+- Install and configure Tailwind CSS
+- Build multiple pages
+- Create a global layout
+- Implement responsive navigation and footer
+- Add SEO metadata
+- Ensure responsive design across devices
+
+---
+
+## Pages Implemented
+
+The following pages were created:
+
+- Home
+- About
+- Blog Listing
+- Contact
+
+Each page includes:
+
+- Proper heading structure
+- Responsive layout
+- SEO metadata
+- Optimized images
+
+---
+
+## Global Layout
+
+The layout includes:
+
+- Navbar
+- Main content area
+- Footer
+
+### Navbar Features
+
+- Logo
+- Navigation links
+- Mobile responsive menu
+
+### Footer Features
+
+- Company information
+- Quick links
+- Copyright section
+
+---
+
+## Technologies Used
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Next.js Image Optimization
+- Lucide React Icons
+- Lighthouse for performance testing
+
+---
+
+## SEO Implementation
+
+The following SEO improvements were implemented:
+
+- Page titles and descriptions
+- Open Graph metadata
+- Robots configuration
+- Social preview images
+
+SEO was verified using:
+
+- Page source inspection
+- Lighthouse SEO audit
+
+---
+
+## Performance Optimisation
+
+The project was tested using Lighthouse and optimized by:
+
+- Using Next.js Image component
+- Reducing layout shifts (CLS)
+- Reserving layout space for images and animations
+- Improving responsive image loading
+- Optimizing animations
+
+---
+
+## Responsive Design
+
+The UI is responsive for:
+
+- Mobile devices
+- Tablets
+- Desktop screens
+
+Techniques used:
+
+- Grid layouts
+- Flexible containers
+- Responsive typography
+- Mobile navigation
+
+---
+
+## How to Run the Project
+
+Install dependencies:
+
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build production version:
 
-## Learn More
+```
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Repository Link
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+https://github.com/codewithprajapti/next-first-assignment-app.git
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Conclusion
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project demonstrates:
+
+- Next.js project structure
+- Responsive UI development
+- SEO and metadata implementation
+- Performance optimization using Lighthouse
+- Debugging and improving real-world frontend issues
+
+The application follows modern frontend development practices and simulates a real production workflow.
