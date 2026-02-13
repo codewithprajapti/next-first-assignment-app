@@ -5,8 +5,38 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-};
+  description:
+    "Get in touch with Techies Infotech for web development, software solutions, and IT services. Reach out to discuss your project or business needs.",
 
+  keywords: [
+    "Contact Techies Infotech",
+    "IT company contact",
+    "web development services contact",
+    "software company support",
+  ],
+
+  openGraph: {
+    title: "Contact Us | Techies Infotech",
+    description:
+      "Reach out to Techies Infotech to discuss your project or business requirements.",
+    url: "http://localhost:3000/contact",
+    siteName: "Techies Infotech",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1740560051533-3acef26ace95?w=1200&q=80",
+        width: 1200,
+        height: 630,
+        alt: "Contact Techies Infotech",
+      },
+    ],
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 export default function page() {
   return (
     <>

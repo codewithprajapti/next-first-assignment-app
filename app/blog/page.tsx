@@ -6,6 +6,37 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blogs",
+  description:
+    "Explore the latest articles, insights, and tutorials from Techies Infotech on web development, software engineering, and modern technologies.",
+
+  keywords: [
+    "Techies Infotech blog",
+    "web development articles",
+    "Next.js tutorials",
+    "software development blog",
+  ],
+
+  openGraph: {
+    title: "Blogs | Techies Infotech",
+    description:
+      "Read articles and insights on web development and modern technologies.",
+    url: "http://localhost:3000/blog",
+    siteName: "Techies Infotech",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=1200&q=80",
+        width: 1200,
+        height: 630,
+        alt: "Techies Infotech Blog",
+      },
+    ],
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function page() {
